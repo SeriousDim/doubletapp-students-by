@@ -1,5 +1,6 @@
 import './App.css'
 import {Icon} from './shared/ui/icon'
+import {Typography} from './shared/ui/typography/typography.tsx'
 
 function App() {
   return (
@@ -10,6 +11,10 @@ function App() {
           <Icon
             iconName={'spinner-check'}
           />
+          <Typography
+            headingLevel={1}>
+            Студенты
+          </Typography>
         </div>
       </div>
     </>

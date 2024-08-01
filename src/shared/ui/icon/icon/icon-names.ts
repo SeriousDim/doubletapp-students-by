@@ -3,4 +3,7 @@ export type IconNames =
   'rating' |
   'search' |
   'sort' |
-  'spinner-check'
+  'spinner-check' |
+  'logo'
+
+export const getIcon = (iconName: IconNames) => `./icons/${iconName}.svg`
