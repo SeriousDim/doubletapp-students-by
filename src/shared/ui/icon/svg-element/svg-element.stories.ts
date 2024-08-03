@@ -1,7 +1,7 @@
 import {Meta, StoryObj} from '@storybook/react'
 import {Svg} from './svg.tsx'
-import {getIcon} from '../icon/icon-names.ts'
 import {SvgProps} from './props.ts'
+import {getIcon} from '../icon/icon-names.ts'
 
 const meta = {
   title: 'UI/Svg Element',
@@ -15,6 +15,7 @@ const meta = {
     height: { control: 'text' },
   },
   args: {
+    //src: getIcon('delete')
     src: getIcon('delete')
   }
 } satisfies Meta<typeof Svg>

@@ -1,5 +1,7 @@
+import React from 'react'
+
 export type SvgProps = {
   src: string,
-  width?: number | string,
-  height?: number | string
+  width?: React.SVGProps<SVGSVGElement>['width'],
+  height?: React.SVGProps<SVGSVGElement>['height']
 }

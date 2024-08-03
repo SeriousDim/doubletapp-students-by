@@ -10,7 +10,6 @@ const meta = {
   },
   tags: ['autodocs'],
   argTypes: {
-    color: { control: 'color' },
     fontSize: { control: 'text' },
     lineHeight: { control: 'text' },
     headingLevel: {

@@ -6,4 +6,4 @@ export type IconNames =
   'spinner-check' |
   'logo'
 
-export const getIcon = (iconName: IconNames) => `./icons/${iconName}.svg`
+export const getIcon = (iconName: IconNames) => `../../../assets/icons/${iconName}.svg?react`

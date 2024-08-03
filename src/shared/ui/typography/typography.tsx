@@ -10,7 +10,7 @@ export function Typography(props: TypographyProps) {
       fontSize={setting.fontSize}
       weight={setting.weight}
       lineHeight={setting.lineHeight}
-      color={props.color}
+      styles={props.styles}
     >
       {props.children}
     </TypographyContainer>

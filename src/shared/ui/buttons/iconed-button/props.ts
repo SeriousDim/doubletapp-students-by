@@ -1,8 +1,7 @@
-import {CSSProperties} from 'react'
-import {IconNames} from '../../icon'
+import {CSSProperties, PropsWithChildren} from 'react'
 
 export type IconedButtonProps = {
   onClick: () => void,
-  padding: CSSProperties['padding'],
-  iconName: IconNames
+  width: CSSProperties['width']
 }
+& PropsWithChildren

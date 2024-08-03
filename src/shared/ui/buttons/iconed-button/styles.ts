@@ -1,20 +1,25 @@
 import styled from 'styled-components'
 import {CSSProperties} from 'react'
+import {ACTIVE_BACKGROUND_COLOR, HOVERED_BACKGROUND_COLOR} from '../../../assets/colors/states.ts'
+import {Button} from '../styles/button.ts'
 
-export const IconedButtonContainer = styled.button<{
-  padding: CSSProperties['padding']
+export const IconedButtonContainer = styled(Button)<{
+  width: CSSProperties['width']
 }>`
-  background-color: #FFFFFF;
-
-  box-shadow: 0 0 16.37px 0 rgba(0, 0, 0, 0.1);
-
-  transition: 0.3s;
-  border: none;
   border-radius: 100%;
+
+  width: ${props => props.width};
+  height: ${props => props.width};
   
-  padding: ${props => props.padding};
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &:hover {
-    background-color: #e0e0e0;
+    background-color: ${HOVERED_BACKGROUND_COLOR};
+  }
+
+  &:active {
+    background-color: ${ACTIVE_BACKGROUND_COLOR};
   }
 `
