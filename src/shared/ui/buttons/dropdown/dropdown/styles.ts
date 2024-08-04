@@ -25,6 +25,21 @@ export const DropdownContainer = styled(Button)<{
   }
 `
 
+export const DropdownWithIconOnlyContainer = styled(Button)`
+  border-radius: 6px;
+
+  height: ${`${DROPDOWN_HEIGHT_PX}px`};
+
+  display: flex;
+  align-items: center;
+
+  padding: 17px 14px;
+
+  &:hover {
+    background-color: ${HOVERED_BACKGROUND_COLOR};
+  }
+`
+
 export const ModalWindowWrapper = styled.div<{
   modalAlignment: DropdownProps['modalAlignment']
 }>`

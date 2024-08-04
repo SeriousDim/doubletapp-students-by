@@ -1,39 +1,19 @@
 import {DropdownProps} from './props.ts'
-import {DropdownContainer, ModalWindowWrapper} from './styles.ts'
-import DropdownArrowDown from '../../../../assets/icons/dropdown-arrow-down.svg?react'
-import {EmptyLabel} from '../empty-label'
+import {ModalWindowWrapper} from './styles.ts'
 import {DropdownModalWindow} from '../dropdown-modal-window/dropdown-modal-window.tsx'
-import {SelectedItem} from './selected-item.tsx'
+import {DropdownWithIconOnly, DropdownWithText} from './markups.tsx'
 
-export function Dropdown({
-  width,
-  Icon,
-  ...props
-}: DropdownProps) {
+export function Dropdown(props: DropdownProps) {
   return (
     <div style={{
-      position: 'relative'
+      position: 'relative',
+      display: 'inline-block'
     }}>
-      <DropdownContainer
-        width={width}
-        onClick={() => {
-          props?.onDropdownClick?.()
-        }}
-      >
-        {
-          !props.showIconOnly && (
-            props.items.length === 0
-              ? <EmptyLabel/>
-              : <SelectedItem item={props.items[props.selectedItemIndex]}/>
-          )
-        }
-        {
-          Icon && <Icon/>
-        }
-        {
-          !Icon && <DropdownArrowDown/>
-        }
-      </DropdownContainer>
+      {
+        props.showIconOnly
+          ? <DropdownWithIconOnly {...props}/>
+          : <DropdownWithText {...props}/>
+      }
       <ModalWindowWrapper
         modalAlignment={props.modalAlignment}
       >

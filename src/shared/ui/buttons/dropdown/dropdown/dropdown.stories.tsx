@@ -99,13 +99,8 @@ export const Empty: Story = {
 export const IconOnly: Story = {
   args: {
     width: undefined,
-    showIconOnly: true
-  }
-}
-
-export const WiderDropdown: Story = {
-  args: {
-    width: '250px'
+    showIconOnly: true,
+    Icon: SortIcon,
   }
 }
 
@@ -113,5 +108,20 @@ export const RightAlignment: Story = {
   args: {
     width: '130px',
     modalAlignment: 'right'
+  }
+}
+
+export const IconOnlyAndRightAlignment: Story = {
+  args: {
+    width: undefined,
+    showIconOnly: true,
+    Icon: SortIcon,
+    modalAlignment: 'right'
+  }
+}
+
+export const WiderDropdown: Story = {
+  args: {
+    width: '250px'
   }
 }
