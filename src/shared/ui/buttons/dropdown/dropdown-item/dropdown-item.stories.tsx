@@ -31,6 +31,13 @@ export const Unchecked: Story = {
   }
 }
 
+export const UncheckedWithLongText: Story = {
+  args: {
+    checked: false,
+    children: 'Очень длинный текст должен обрезаться'
+  }
+}
+
 export const Checked: Story = {
   args: {
     checked: true
