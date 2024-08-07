@@ -19,6 +19,8 @@ export const DropdownContainer = styled(Button)<{
   
   width: ${props => props.width};
   padding: 0 17px 0 0;
+
+  box-shadow: 0 7px 64px rgba(0, 0, 0, 0.07);
   
   &:hover {
     background-color: ${HOVERED_BACKGROUND_COLOR};
@@ -35,6 +37,8 @@ export const DropdownWithIconOnlyContainer = styled(Button)`
 
   padding: 17px 14px;
 
+  box-shadow: 0 7px 64px rgba(0, 0, 0, 0.07);
+  
   &:hover {
     background-color: ${HOVERED_BACKGROUND_COLOR};
   }

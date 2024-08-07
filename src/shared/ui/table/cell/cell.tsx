@@ -5,10 +5,8 @@ export function Cell(props: CellProps) {
     <td style={{
       width: props?.styles?.width,
       minWidth: props?.styles?.minWidth,
-      height: '40px',
+      height: props?.styles?.height || '40px',
       flex: props?.styles?.flex,
-      display: 'flex',
-      alignItems: 'center',
       padding: props?.styles?.padding || 0,
       margin: props?.styles?.margin || 0,
     }}>

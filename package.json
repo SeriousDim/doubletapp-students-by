@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@storybook/addon-a11y": "^8.2.6",
+    "@tanstack/react-table": "^8.20.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-svg": "^16.1.34",

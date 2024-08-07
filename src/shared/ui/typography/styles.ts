@@ -19,6 +19,7 @@ export const TypographyContainer = styled.div<{
   white-space: ${props => props?.styles?.whiteSpace};
   
   width: ${props => props?.styles?.width};
+  min-width: ${props => props?.styles?.minWidth};
   height: ${props => props?.styles?.height};
   
   flex: ${props => props?.styles?.flex};

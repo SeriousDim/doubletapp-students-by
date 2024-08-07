@@ -12,3 +12,8 @@ export type InputFieldProps = {
   styles?: InputFieldStyles,
   onChange?: ChangeEventHandler<string>
 }
+
+export type IconedInputFieldProps = {
+  inputFieldProps?: InputFieldProps,
+  Icon: Element
+}

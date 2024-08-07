@@ -5,6 +5,7 @@ export type CellPropsStyles = {
   margin?: CSSProperties['margin'],
   flex?: CSSProperties['flex'],
   width?: CSSProperties['width'],
+  height?: CSSProperties['height'],
   minWidth?: CSSProperties['minWidth']
 }
 

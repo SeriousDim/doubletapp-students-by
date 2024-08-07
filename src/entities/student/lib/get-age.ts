@@ -1,8 +1,5 @@
-import {Student} from '../../../../shared/model/student.ts'
-
-export function getAge(student: Student) {
+export function getAge(birthday: Date) {
   const now = new Date()
-  const birthday = new Date(student.birthday)
   birthday.setHours(0, 0, 0, 0)
 
   let age = now.getFullYear() - birthday.getFullYear()
