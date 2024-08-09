@@ -4,7 +4,7 @@ import {CSSProperties} from 'react'
 export const ToolbarContainer = styled.header<{
   horizontalPadding: CSSProperties['padding']
 }>`
-  height: 85.29px;
+  height: 85px;
 
   background-color: #FFFFFF;
 

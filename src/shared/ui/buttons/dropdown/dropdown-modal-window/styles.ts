@@ -1,9 +1,7 @@
 import styled from 'styled-components'
-import {CSSProperties} from 'react'
+import {TRANSITION_TIME_MS} from './const.ts'
 
-export const DropdownModalWindowContainer = styled.ul<{
-  hidden: boolean
-}>`
+export const DropdownModalWindowContent = styled.ul`
   background-color: #FFFFFF;
   
   border-radius: 6px;
@@ -20,11 +18,14 @@ export const DropdownModalWindowContainer = styled.ul<{
   display: flex;
   flex-direction: column;
   gap: 4px;
+`
 
-  visibility: ${props => props.hidden ? 'hidden' : 'visible'};
+export const DropdownModalWindowContainer = styled.div<{
+  hidden: boolean
+}>`
+  display: block;
+  visibility:  ${props => props.hidden ? 'hidden' : 'visible'};
   opacity: ${props => props.hidden ? 0 : 1};
-  
-  z-index: 1000;
-  
-  transition: 0.3s;
+
+  transition: ${TRANSITION_TIME_MS}ms;
 `

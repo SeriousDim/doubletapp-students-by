@@ -3,7 +3,9 @@ import {IconedInputFieldContainer} from './styles.ts'
 import {IconedInputFieldProps} from './props.ts'
 export function IconedInputField(props: IconedInputFieldProps) {
   return (
-    <IconedInputFieldContainer>
+    <IconedInputFieldContainer
+      styles={props.styles}
+    >
       <props.Icon/>
       <InputField
         {...props.inputFieldProps}

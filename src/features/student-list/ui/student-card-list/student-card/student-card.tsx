@@ -28,7 +28,8 @@ export function StudentCard(props: StudentCardProps) {
         }]}/>
       </CardHeader>
       <div style={{
-        position: 'relative'
+        position: 'relative',
+        zIndex: 0
       }}>
         <PropertyList
           birthday={props.birthday}

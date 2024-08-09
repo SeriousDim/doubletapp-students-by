@@ -3,7 +3,8 @@ import {ChangeEventHandler, CSSProperties} from 'react'
 export type InputFieldStyles = {
   hintColor?: CSSProperties['color'],
   valueColor?: CSSProperties['color'],
-  width?: CSSProperties['width']
+  width?: CSSProperties['width'],
+  flex?: CSSProperties['flex']
 }
 
 export type InputFieldProps = {
@@ -13,7 +14,12 @@ export type InputFieldProps = {
   onChange?: ChangeEventHandler<string>
 }
 
+export type IconedInputFieldPropsStyles = {
+  flex?: CSSProperties['flex']
+}
+
 export type IconedInputFieldProps = {
   inputFieldProps?: InputFieldProps,
+  styles?: IconedInputFieldPropsStyles,
   Icon: Element
 }

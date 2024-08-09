@@ -41,8 +41,6 @@ export const createColumns = (): ColumnDef<StudentTableRowData, any>[] => [
         text={'ФИО'}
         cellStyles={{
           padding: '0 20px 0 0',
-          minWidth: '200px',
-          flex: 1,
           height: '36px'
         }}
       />
@@ -52,8 +50,6 @@ export const createColumns = (): ColumnDef<StudentTableRowData, any>[] => [
         text={props.getValue()}
         cellStyles={{
           padding: '0 20px 0 0',
-          minWidth: '200px',
-          flex: 1
         }}
       />
     )
@@ -65,7 +61,6 @@ export const createColumns = (): ColumnDef<StudentTableRowData, any>[] => [
       cellStyles={{
         padding: '0 20px 0 0',
         minWidth: '100px',
-        flex: 1,
         height: '36px'
       }}
     />,
@@ -74,7 +69,6 @@ export const createColumns = (): ColumnDef<StudentTableRowData, any>[] => [
       cellStyles={{
         padding: '0 20px 0 0',
         minWidth: '100px',
-        flex: 1
       }}
     />
   }),
@@ -136,6 +130,7 @@ export const createColumns = (): ColumnDef<StudentTableRowData, any>[] => [
     id: 'color',
     header: () => <td style={{
       padding: '0 21px 0 0',
+      width: '30px',
       height: '36px'
     }}/>,
     cell: props => <ColorBadgeCell
@@ -152,6 +147,7 @@ export const createColumns = (): ColumnDef<StudentTableRowData, any>[] => [
     header: () => <td style={{
       boxSizing: 'border-box',
       minWidth: '47px',
+      width: '47px',
       height: '36px'
     }}/>,
     cell: props => <ActionsCell

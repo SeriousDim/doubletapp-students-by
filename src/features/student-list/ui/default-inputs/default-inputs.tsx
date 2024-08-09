@@ -3,6 +3,7 @@ import {IconedInputField} from '../../../../shared/ui/input-field/iconed-input-f
 import {Dropdown} from '../../../../shared/ui/buttons/dropdown'
 import {useState} from 'react'
 import SearchIcon from '../../../../shared/assets/icons/search.svg?react'
+import SortIcon from '../../../../shared/assets/icons/sort.svg?react'
 
 export function DefaultInputs({
   showDropdownIconOnly = false,
@@ -19,12 +20,17 @@ export function DefaultInputs({
     }}>
       <IconedInputField
         Icon={SearchIcon}
+        styles={{
+          flex: 1
+        }}
         inputFieldProps={{
           onChange: (e) => props?.onNameChange?.(e.target.value),
-          hint: 'Поиск по имени'
+          hint: 'Поиск по имени',
+          styles: { flex: 1 }
         }}
       />
       <Dropdown
+        Icon={SortIcon}
         modalAlignment={'right'}
         width={'180px'}
         showIconOnly={showDropdownIconOnly}

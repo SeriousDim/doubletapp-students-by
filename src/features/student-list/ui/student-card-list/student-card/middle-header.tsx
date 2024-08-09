@@ -19,11 +19,6 @@ export function MiddleHeader(props: {
     }}>
       <Typography
         name={'16 / M'}
-        styles={{
-          overflow: 'hidden',
-          whiteSpace: 'nowrap',
-          textOverflow: 'ellipsis'
-        }}
       >
         {props.name}
       </Typography>

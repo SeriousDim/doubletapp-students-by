@@ -51,4 +51,6 @@ export const ModalWindowWrapper = styled.div<{
   top: ${DROPDOWN_MODAL_WINDOW_TOP_POSITION};
   left: ${props => props.modalAlignment === 'left' ? 0 : undefined};
   right: ${props => props.modalAlignment === 'right' ? 0 : undefined};
+  
+  z-index: 1000;
 `

@@ -34,7 +34,7 @@ export function PropertyList(props: {
 
   return (
     <ul style={{
-      position: 'absolute',
+      position: 'relative',
       left: '54px',
     }}>
       <PropertyListItem>{`${age} ${getAgeEndingWord(age)}`}</PropertyListItem>

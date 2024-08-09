@@ -8,7 +8,7 @@ export function Cell(props: CellProps) {
       height: props?.styles?.height || '40px',
       flex: props?.styles?.flex,
       padding: props?.styles?.padding || 0,
-      margin: props?.styles?.margin || 0,
+      margin: props?.styles?.margin || 0
     }}>
       {props.children}
     </td>
