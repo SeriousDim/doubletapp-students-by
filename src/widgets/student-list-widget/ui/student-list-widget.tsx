@@ -4,28 +4,36 @@ import {StudentListWidgetMobile} from './student-list-widget-mobile.tsx'
 import {ClassNames} from '../model/class-names.ts'
 import {StudentListWidgetContainer} from './styles.ts'
 import {useEffect, useState} from 'react'
-import {searchByName} from '../model/search-by-name.ts'
-import {FilterRules} from '../model/filter-options.ts'
+import {applyAllFilters} from '../model/filters.ts'
 
 export function StudentListWidget(props: StudentListWidgetProps) {
+  const [students, setStudents] = useState(props.students)
+
   const [searchName, setSearchName] = useState('')
   const [filterOptionIndex, setFilterOptionIndex] = useState(0)
-  const [filteredStudents, setFilteredStudents] = useState(FilterRules[filterOptionIndex](props.students))
+  const [filteredStudents, setFilteredStudents]
+    = useState(applyAllFilters(students, searchName, filterOptionIndex))
 
   useEffect(() => {
-    let newStudents = searchByName(filteredStudents, searchName)
-    newStudents = FilterRules[filterOptionIndex](newStudents)
-    setFilteredStudents(newStudents)
-  }, [filteredStudents, searchName, filterOptionIndex])
+    setFilteredStudents(applyAllFilters(students, searchName, filterOptionIndex))
+  }, [filterOptionIndex, searchName, students])
+
+  // useEffect(() => {
+  //   setFilteredStudents(prev => searchByName(prev, searchName))
+  // }, [searchName])
+  //
+  // useEffect(() => {
+  //   setFilteredStudents(prev => sortByFilterOption(prev, filterOptionIndex))
+  // }, [filterOptionIndex])
 
   const onNameChange = (name: string) => setSearchName(name)
   const onFilterChange = (optionIndex: number) => {
     setFilterOptionIndex(optionIndex)
   }
   const onDeleteStudent = (index: number) => {
-    const newStudents = [...filteredStudents]
+    const newStudents = [...students]
     newStudents.splice(index, 1)
-    setFilteredStudents(newStudents)
+    setStudents(newStudents)
   }
 
   return (
