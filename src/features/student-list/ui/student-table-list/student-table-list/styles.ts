@@ -9,21 +9,21 @@ export const TableContainer = styled.table<{
   
   border-spacing: 0;
   
-  overflow-y: auto;
+  overflow: auto;
   
-  tbody tr:first-child td:first-child {
+  .tbody tr:first-child td:first-child {
     border-top-left-radius: 6px;
   }
 
-  tbody tr:first-child td:last-child {
+  .tbody tr:first-child td:last-child {
     border-top-right-radius: 6px;
   }
 
-  tbody tr:last-child td:first-child {
+  .tbody tr:last-child td:first-child {
     border-bottom-left-radius: 6px;
   }
 
-  tbody tr:last-child td:last-child {
+  .tbody tr:last-child td:last-child {
     border-bottom-right-radius: 6px;
   }
 `

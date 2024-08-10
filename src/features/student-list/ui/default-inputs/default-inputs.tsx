@@ -6,7 +6,7 @@ import SearchIcon from '../../../../shared/assets/icons/search.svg?react'
 import SortIcon from '../../../../shared/assets/icons/sort.svg?react'
 
 export function DefaultInputs({
-  showDropdownIconOnly = false,
+  mobile = false,
   ...props
 }: DefaultInputsProps) {
   const [selectedOptionIndex, setSelectedOptionIndex] = useState(0)
@@ -16,7 +16,7 @@ export function DefaultInputs({
     <div style={{
       width: '100%',
       display: 'flex',
-      gap: '20px'
+      gap: mobile ? '15px' : '20px'
     }}>
       <IconedInputField
         Icon={SearchIcon}
@@ -33,7 +33,7 @@ export function DefaultInputs({
         Icon={SortIcon}
         modalAlignment={'right'}
         width={'180px'}
-        showIconOnly={showDropdownIconOnly}
+        showIconOnly={mobile}
         selectedItemIndex={selectedOptionIndex}
         items={props.filterOptions}
         showModal={showModal}

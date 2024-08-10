@@ -25,6 +25,11 @@ export const FontSettings: {[key in TypographyName]: FontSetting} = {
     fontSize: '40px',
     weight: '700',
     lineHeight: '50.32px'
+  },
+  '30 / B': {
+    fontSize: '30px',
+    weight: '700',
+    lineHeight: '37.74px'
   }
 }
 

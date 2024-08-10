@@ -10,6 +10,7 @@ export const HeaderTextCell = (props: TextCellProps) => (
 
 const columnHelper = createColumnHelper<StudentTableRowData>()
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const createColumns = (): ColumnDef<StudentTableRowData, any>[] => [
   columnHelper.accessor(row => row.avatar, {
     id: 'avatar',

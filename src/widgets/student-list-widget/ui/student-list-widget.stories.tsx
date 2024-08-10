@@ -23,7 +23,7 @@ const meta = {
         color: 'green',
         avatar: PlaceholderImage,
         group: 'ПИ-101',
-        speciality: 'Прикладная информатика',
+        specialty: 'Прикладная информатика',
         birthday: new Date('2001-04-03'),
         sex: StudentSex.Male,
         email: 'grid@mail.ru'
@@ -35,7 +35,7 @@ const meta = {
         color: 'green',
         avatar: PlaceholderImage,
         group: 'ПИ-101',
-        speciality: 'Прикладная информатика',
+        specialty: 'Прикладная информатика',
         birthday: new Date('2001-04-03'),
         sex: StudentSex.Male,
         email: 'grid@mail.ru'
@@ -47,7 +47,7 @@ const meta = {
         color: 'green',
         avatar: PlaceholderImage,
         group: 'ПИ-101',
-        speciality: 'Прикладная информатика',
+        specialty: 'Прикладная информатика',
         birthday: new Date('2001-04-03'),
         sex: StudentSex.Male,
         email: 'grid@mail.ru'

@@ -1,6 +1,7 @@
 import {Meta, StoryObj} from '@storybook/react'
 import {DefaultInputs} from './default-inputs.tsx'
 import {DefaultInputsProps} from './props.ts'
+/* eslint-disable no-console */
 
 const meta = {
   title: 'Features/Student List/Default Inputs',
@@ -40,6 +41,6 @@ export const DropdownIconOnly: Story = {
     </div>
   ],
   args: {
-    showDropdownIconOnly: true
+    mobile: true
   }
 }

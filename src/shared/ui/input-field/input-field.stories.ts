@@ -1,6 +1,7 @@
 import {Meta, StoryObj} from '@storybook/react'
 import {InputField} from './input-field.tsx'
 import {InputFieldProps} from './props.ts'
+/* eslint-disable no-console */
 
 const meta = {
   title: 'UI/Input Field',

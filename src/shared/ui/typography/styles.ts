@@ -25,4 +25,7 @@ export const TypographyContainer = styled.div<{
   flex: ${props => props?.styles?.flex};
   text-align: ${props => props?.styles?.textAlign || 'left'};
   vertical-align: ${props => props?.styles?.verticalAlign};
+  
+  padding: 0;
+  margin: 0;
 `

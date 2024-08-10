@@ -5,7 +5,7 @@ import {Typography} from '../../../shared/ui/typography/typography.tsx'
 export function AppHeaderWidgetDesktop() {
   return (
     <Toolbar
-      horizontalPadding={'130px'}
+      horizontalPadding={'calc(100%/12)'}
     >
       <div style={{
         height: '100%',

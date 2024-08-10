@@ -2,6 +2,7 @@ import {Meta, StoryObj} from '@storybook/react'
 import {IconedInputField} from './iconed-input-field.tsx'
 import {IconedInputFieldProps} from './props.ts'
 import SearchIcon from '../../assets/icons/search.svg?react'
+/* eslint-disable no-console */
 
 const meta = {
   title: 'UI/Iconed Input Field',

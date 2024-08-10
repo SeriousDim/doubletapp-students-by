@@ -15,6 +15,7 @@ export type TypographyStyles = {
 }
 
 export type TypographyProps = {
+  as?: string,
   headingLevel?: HeadingLevel,
   name?: TypographyName,
   styles?: TypographyStyles

@@ -12,7 +12,7 @@ export type Student = {
   email: string,
   name: string,
   sex: StudentSex,
-  speciality: string,
+  specialty: string,
   group: string,
   color: StudentColors,
   rating: number,

@@ -11,4 +11,6 @@ export const ImageContainer = styled.img <{
 
   outline: 2px solid rgba(255, 255, 255, 0.6);
   outline-offset: -2px;
+  
+  object-fit: cover;
 `
