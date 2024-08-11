@@ -1,5 +1,5 @@
 import {DropdownProps} from './props.ts'
-import {ModalWindowWrapper} from './styles.ts'
+import {FreespaceToClose, ModalWindowWrapper} from './styles.ts'
 import {DropdownModalWindow} from '../dropdown-modal-window/dropdown-modal-window.tsx'
 import {DropdownWithIconOnly, DropdownWithText} from './markups.tsx'
 
@@ -14,8 +14,12 @@ export function Dropdown(props: DropdownProps) {
           ? <DropdownWithIconOnly {...props}/>
           : <DropdownWithText {...props}/>
       }
+      {
+        props.showModal && <FreespaceToClose onClick={props.onDropdownClick}/>
+      }
       <ModalWindowWrapper
         modalAlignment={props.modalAlignment}
+        show={props.showModal}
       >
         <DropdownModalWindow
           items={props.items}

@@ -45,12 +45,23 @@ export const DropdownWithIconOnlyContainer = styled(Button)`
 `
 
 export const ModalWindowWrapper = styled.div<{
-  modalAlignment: DropdownProps['modalAlignment']
+  modalAlignment: DropdownProps['modalAlignment'],
+  show: boolean
 }>`
   position: absolute;
   top: ${DROPDOWN_MODAL_WINDOW_TOP_POSITION};
   left: ${props => props.modalAlignment === 'left' ? 0 : undefined};
   right: ${props => props.modalAlignment === 'right' ? 0 : undefined};
+
+  pointer-events: ${props => props.show ? 'visible' : 'none'};
   
   z-index: 1000;
+`
+
+export const FreespaceToClose = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 `
